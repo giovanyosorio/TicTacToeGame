@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TicTactoe</title>
+    <title>TicTacToe</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,16 +15,22 @@
         <p>Player X: Gio</p>
         <p> Player Y: Luisa</p>
     </div>
-    <div class="container">
-        <div class="item-1 item"></div>
-        <div class="item-2 item" ></div>
-        <div class="item-3 item"></div>
-        <div class="item-4 item"></div>
-        <div class="item-5 item"></div>
-        <div class="item-6 item"></div>
-        <div class="item-7 item"></div>
-        <div class="item-8 item"></div>
-        <div class="item-9 item"></ div>
+    <div class="board" id="board">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+    </div>
+    <div class="winning-message" id="winningMessage">
+        <div data-winning-message-text>
+            <button id="restartButton">Restart</button>
+        </div>
     </div>
 </body>
+<script src="script.js"></script>
 </html>
