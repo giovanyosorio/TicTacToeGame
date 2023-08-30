@@ -53,12 +53,13 @@ html{
 
     cursor: not-allowed;
 }
-/*
+
 .board.x.cell:hover{
 
-}*/
+}
 .cell.x::before,
-.board.x.cell:hover,
+.board.x .cell:hover::before,
+.board.x .cell:hover::after,
 .cell.x::after
 {
     content: "";
@@ -67,11 +68,13 @@ html{
     height: var(--mark-size);
     background-color: black;
 }
-.cell.x::before
+.cell.x::before,
+.board.x .cell:hover::before
 {
     transform: rotate(45deg);
 }
-.cell.x::after
+.cell.x::after,
+.board.x .cell:hover::after
 {
     transform: rotate(-45deg);
 }
@@ -82,7 +85,7 @@ html{
     content: "";
     position: absolute;
     border-radius: 50%;
-   
+
 }
 .cell.circle::before{
     width: var(--mark-size);
